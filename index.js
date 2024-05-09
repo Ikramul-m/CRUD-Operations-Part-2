@@ -7,10 +7,9 @@ const PORT = 3000;
 const hostName = "localhost";
 
 app.listen(PORT, () => {
-  console.log(`Server is running on http://${hostName}:${PORT}`);
+  console.log(`Server is running at http://${hostName}:${PORT}`);
 });
 
-app.get('/', (req,res) => {
-    res.send('Welcome')
-})
-
+app.get("/", (req, res) => {
+  res.send("Welcome to my Home!!!");
+});
